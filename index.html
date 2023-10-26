@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unique Fruits</title>
+</head>
+<body>
+    <h2>Unique Fruits in Basket A</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fruit</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for fruit in fruits_a %}
+            <tr>
+                <td>{{ fruit }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Unique Fruits in Basket B</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fruit</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for fruit in fruits_b %}
+            <tr>
+                <td>{{ fruit }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

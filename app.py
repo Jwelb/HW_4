@@ -49,7 +49,7 @@ def unique_fruits():
         conn.close()
 
         # Render an HTML table to display unique fruits
-        return render_template('unique_fruits.html', fruits_a=unique_fruits_a, fruits_b=unique_fruits_b)
+        return render_template('index.html', fruits_a=unique_fruits_a, fruits_b=unique_fruits_b)
     except Exception as e:
         return str(e)
 
